@@ -1,0 +1,13 @@
+<h2>Courses</h2>
+<ul>
+    {% for course in courses %}
+        <li>{{ course.name }} - {{ course.code }} ({{ course.capacity }} students)</li>
+    {% endfor %}
+</ul>
+
+<h2>Teachers</h2>
+<ul>
+    {% for teacher in teachers %}
+        <li>{{ teacher.first_name }} {{ teacher.last_name }}</li>
+    {% endfor %}
+</ul>
